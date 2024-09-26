@@ -25,7 +25,7 @@ xlabel("Time");
 ylabel("Amplitude");
 title("Undersampling");
 legend("Discrete","Continuous");
-%nyquist sampling
+%nyquist sampling.
 fs2=3*fm;
 t2=0:1/fs2:1;
 y2=sin(2*pi*fm*t2);
