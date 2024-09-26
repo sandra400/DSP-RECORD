@@ -1,0 +1,14 @@
+clc;
+close all;
+x=input("enter input");
+x_index=input("enter index of x");
+h=input("enter impulse response");
+h_index=input("enter index of h");
+y_index=min(x_index)+min(h_index):max(x_index)+max(h_index);
+y=conv(x,h);
+disp(y);
+subplot(1,2,1);
+stem(y_index,y);
+xlabel("index");
+ylabel("amplitude");
+title("Linear convolution using built-in function");
